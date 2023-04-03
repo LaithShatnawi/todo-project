@@ -1,127 +1,168 @@
+body {
+  background: #363d2d;
+  color: white;
+}
+
 nav {
-    position: fixed;
-    top: 0;
-    width: 115em;
-    height: 4.5em;
-    background-color: #73AD21;
-    border: 20px solid #73AD21;
-    z-index: 1;
-  }
+  position: fixed;
+  top: 0;
+  width: 115em;
+  height: 4.5em;
+  background-color: #73ad21;
+  border: 20px solid #73ad21;
+  z-index: 1;
+}
+
 button {
-    position: relative;
-    top: -55px;
-    font-size: 30px;
-    font-family: "Audiowide", sans-serif;
-    margin: 1px 0.5em;
-    background-color: #009933;
-    padding: 15px 150px;
-  } 
-  button a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  button a:hover {
-    background-color: #88cc00;
-  }
+  position: relative;
+  top: -55px;
+  font-size: 30px;
+  font-family: "Audiowide", sans-serif;
+  margin: 1px 0.5em;
+  background-color: #009933;
+  padding: 15px 150px;
+}
+
+button a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #88cc00;
+}
+
 .logo {
-    position: relative;
-    top: -20px;
+  position: relative;
+  top: -20px;
 }
+
 h1 {
-    position: relative;
-    top: 120px;
-    padding: 30px;
-    text-align: center;
-    font-size: 70px;
-    color: #e65c00;
-    font-family: "Sofia", sans-serif;
+  position: relative;
+  top: 120px;
+  padding: 30px;
+  text-align: center;
+  font-size: 70px;
+  color: #e65c00;
+  font-family: "Sofia", sans-serif;
 }
+
 footer {
-    position: relative;
-    top: 20em;
-    color: white;
-    padding: 70px;
-    background-color: #73AD21;
-
+  position: relative;
+  color: white;
+  padding: 70px;
+  background-color: #73ad21;
+  margin-top: 200px;
 }
+
 table {
-    position: relative;
-    width: 100em;
-    height: 10em;
-    border: 2px solid;
-    text-align: center;
-    margin: 0 auto;
+  position: relative;
+  width: 100em;
+  height: 10em;
+  border: 2px solid;
+  text-align: center;
+  margin: 0 auto;
 }
+
 th {
-    font-size: 30px;
-    font-family: "Trirong", serif;
-    width: 100em;
-    height: 5em;
-    border: 2px solid;
+  font-size: 30px;
+  font-family: "Trirong", serif;
+  width: 100em;
+  height: 5em;
+  border: 2px solid;
 }
+
 td {
-    font-family: "Trirong", serif;
-    width: 100em;
-    height: 5em;
-    border: 2px solid;
-    font-size: 20px;
+  font-family: "Trirong", serif;
+  width: 100em;
+  height: 5em;
+  border: 2px solid;
+  font-size: 20px;
 }
+
 input:checked {
-    height: 80px;
-    width: 80px;
-  }
-  #laith {
-    position: relative;
-    top: -550px;
-    text-align: center;
-    font-size: 50px;
-    font-family: "Trirong", serif;
-  }
-  ul {
-    position: relative;
-    top: -500px;
-    width: 500px;
-    height: 300px;
-    border: 5px solid black;
-    margin: 0 auto;
+  height: 80px;
+  width: 80px;
+}
 
-  }
-  li {
-    margin: 5px;
-    font-family: "Trirong", serif;
-  }
-  form {
-    position: relative;
-    top: -200px;
-    text-align: center;
-  }
-  #message, label {
-    position: relative;
-    right: 200px;
-    top: 20px;
-  }
-  textarea {
-    position: relative;
-    top: -20px;
-  }
-  input{
-    width: 250px;
-  }
-  #contact {
-    font-size: 60px;
-    font-family: "Sofia", sans-serif;
-  }
-  main, img {
-    border-radius: 50%;
-  }
-  .status{
-    background-color: red;
-  }
-  tr:has(> td > input:checked) > .status{
-    background-color: green;
-  }
-  
+#laith {
+  position: relative;
+  top: -550px;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Trirong", serif;
+}
 
+ul {
+  position: relative;
+  top: -500px;
+  width: 500px;
+  height: 300px;
+  border: 5px solid white;
+  margin: 0 auto;
+}
+
+li {
+  margin: 5px;
+  font-family: "Trirong", serif;
+}
+
+form {
+  position: relative;
+  top: -200px;
+  text-align: center;
+}
+
+#message,
+label {
+  position: relative;
+  right: 200px;
+  top: 20px;
+}
+
+textarea {
+  position: relative;
+  top: -20px;
+}
+
+input {
+  width: 250px;
+}
+
+#contact {
+  font-size: 60px;
+  font-family: "Sofia", sans-serif;
+}
+
+main img {
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+}
+
+.status {
+  background-color: red;
+}
+
+tr:has(> td > input:checked)>.status {
+  background-color: green;
+}
+
+#send {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #e65c00;
+}
+
+body {
+  background: #cff09e;
+  display: block;
+}
+
+canvas {
+  position: absolute;
+}
