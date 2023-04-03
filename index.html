@@ -1,64 +1,93 @@
 <!DOCTYPE html>
 <html>
-    
-<head>
-<title>ToDo List</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="./checkmark-done-exam-list-pencil-todo-icon-416342.png">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-<link rel="stylesheet" href="style.css">
-</head> 
+  <head>
+    <title>ToDo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./checkmark-done-exam-list-pencil-todo-icon-416342.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <canvas id="c"></canvas>
+
     <header>
-        <h1>ToDo List</h1>
-  </header>
-  <nav>
-      <img  class="logo" src="./checkmark-done-exam-list-pencil-todo-icon-416342.png" alt="ToDo List" style="width:100px;height:100px;">
-      <button type="button" ><a href="./index.html">Home</a></button>
-      <button type="button"><a href="./about.html" target="_blank">My Info</a></button>
-  </nav>
-     <br><br><br><br><br><br><br>
-  <main>
-    <br>
-    <table>
-      <tr>
-         <th>Status</th>
-         <th>checkbox</th>
-         <th>List</th>
-      </tr>
-      <tr>
-         <td class="status"></td>
-         <td>
-          <input type="checkbox" id="task1" name="task1" value="development">
-          <label for="task1"> </label>
-         </td>
-         <td>Learn web development</td>
-      </tr>
-      <tr>
-         <td class="status"></td>
-         <td>
-          <input type="checkbox" id="task1" name="task1" value="development">
-            <label for="task1"> </label>
-         </td>
-         <td>Go to the gym consistently</td>
+      <h1>ToDo List</h1>
+    </header>
+    <nav>
+      <a href="./index.html"
+        ><img
+          class="logo"
+          src="./checkmark-done-exam-list-pencil-todo-icon-416342.png"
+          alt="ToDo List"
+          style="width: 100px; height: 100px"
+      /></a>
+      <button type="button"><a href="./index.html">HOME</a></button>
+      <button type="button">
+        <a href="./about.html" target="_blank">MY INFO</a>
+      </button>
+    </nav>
+    <br /><br /><br /><br /><br /><br /><br />
+    <main>
+      <br />
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>checkbox</th>
+          <th>List</th>
         </tr>
         <tr>
-         <td class="status"></td>
-         <td>
-          <input type="checkbox" id="task1" name="task1" value="development">
-          <label for="task1"> </label>
-         </td>
-         <td>Eat healthier</td>
+          <td class="status"></td>
+          <td>
+            <input
+              type="checkbox"
+              id="task1"
+              name="task1"
+              value="development"
+            />
+            <label for="task1"> </label>
+          </td>
+          <td>Learn web development</td>
         </tr>
-      </tr>
-    </table>
+        <tr>
+          <td class="status"></td>
+          <td>
+            <input
+              type="checkbox"
+              id="task1"
+              name="task1"
+              value="development"
+            />
+            <label for="task1"> </label>
+          </td>
+          <td>Go to the gym consistently</td>
+        </tr>
+        <tr>
+          <td class="status"></td>
+          <td>
+            <input
+              type="checkbox"
+              id="task1"
+              name="task1"
+              value="development"
+            />
+            <label for="task1"> </label>
+          </td>
+          <td>Eat healthier</td>
+        </tr>
+      </table>
+    </main>
 
-  </main>
-
-      <footer style="text-align: center;">© 1996-2023, Inc. or its affiliates</footer>
-</body>
-
-
-
+    <footer style="text-align: center">
+      © 1996-2023, Inc. or its affiliates
+    </footer>
+    <script src="./app.js"></script>
+  </body>
 </html>
