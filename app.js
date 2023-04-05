@@ -2,29 +2,47 @@ let userName = prompt("Please enter your Name:");
 let userGender = prompt("Please enter your gender (male/female):");
 let userAge = prompt("Please enter your age:");
 
-if (userAge <= 0){
-alert("the age you entered is not correct");
-};
+if (userAge <= 0) {
+  alert("the age you entered is not correct");
+}
 
 let welcomingMsg = confirm("Would you like to skip the welcoming message?");
 
-if (userName != null){
-if (welcomingMsg == false) {
-  if(userGender == "male"){
-    alert(`Welcome Mr ${userName}`);
-  }
-  else if (userGender == "female"){
-alert(`Welcome Ms ${userName}`);
-  }
-  else {
-alert(`Welcome ${userName}`);
+if (userName != null) {
+  if (welcomingMsg == false) {
+    if (userGender == "male") {
+      alert(`Welcome Mr ${userName}`);
+    } else if (userGender == "female") {
+      alert(`Welcome Ms ${userName}`);
+    } else {
+      alert(`Welcome ${userName}`);
+    }
   }
 }
-};
+let answerArr = [];
+let sportsInterest = prompt("Are you interested in sports? (yes/no)");
+let shawermaFood = prompt("Do you like Shawerma? (yes/no)");
+let codeWriting = prompt("Do you know how to write code? (yes/no)");
+function answerQuestions(answer) {
+  if (answer === "yes") {
+    answerArr.push(answer);
+  } else if (answer === "no") {
+    answerArr.push(answer);
+  } else {
+    answerArr.push("invalid");
+  }
+  return answerArr;
+}
+
+answerQuestions(sportsInterest);
+answerQuestions(shawermaFood);
+answerQuestions(codeWriting);
+console.log(answerArr);
+
 (function () {
   var c = document.getElementById("c"),
     ctx = c.getContext("2d");
-  var bodyElement = document.getElementsByTagName('body');
+  var bodyElement = document.getElementsByTagName("body");
   c.width = innerWidth;
   c.height = bodyElement[0].offsetHeight;
 
@@ -63,6 +81,5 @@ alert(`Welcome ${userName}`);
     requestAnimationFrame(draw);
   }
 
-  draw()
+  draw();
 })();
-
